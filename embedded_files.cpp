@@ -481,7 +481,7 @@ extern "C" BinaryData EmbeddedPackageInstallationRtf() {
 #include "white_noise_6.hpp"
 #include "wind.hpp"
 
-static constexpr EmbeddedIr embedded_irs[] = {
+static const EmbeddedIr embedded_irs[] = {
     // Bizarre FX
     {
         .data = EMBEDDED_FILE(cyber_pulse_flac, "cyber-pulse.flac"),
