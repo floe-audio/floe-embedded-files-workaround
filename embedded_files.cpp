@@ -90,8 +90,8 @@ extern "C" BinaryData EmbeddedRoboto() {
 extern "C" BinaryData EmbeddedUnknownLibraryIcon() {
 #include "unknown_library_icon.hpp"
   return BinaryData{
-      .data = unknown_library_icon_ttf,
-      .size = sizeof(unknown_library_icon_ttf),
+      .data = unknown_library_icon_png,
+      .size = sizeof(unknown_library_icon_png),
       .filename = MakeEmbeddedString("images/unknown_library_icon.png"),
   };
 }
