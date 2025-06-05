@@ -87,6 +87,15 @@ extern "C" BinaryData EmbeddedRoboto() {
   };
 }
 
+extern "C" BinaryData EmbeddedUnknownLibraryIcon() {
+#include "unknown_library_icon.hpp"
+  return BinaryData{
+      .data = unknown_library_icon_ttf,
+      .size = sizeof(unknown_library_icon_ttf),
+      .filename = MakeEmbeddedString("images/unknown_library_icon.png"),
+  };
+}
+
 //
 // export fn EmbeddedDefaultBackground() c.BinaryData {
 //     return embeddedFile("images/default-background.jpg");
